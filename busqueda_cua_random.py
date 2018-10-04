@@ -46,7 +46,7 @@ print("Busqueda cuaternaria")
 #print("Lista: ", lista)
 print("Ingrese cuantos numeros aleatorios desea obtener")
 n = int(input())
-lista = [random.randint(0,1000) for _ in range(n)]
+lista = [random.randint(0,1000) for i in range(n)]
 print("Lista: ", lista)
 
 #Ordenamiento de la lista
