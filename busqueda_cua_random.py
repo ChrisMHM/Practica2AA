@@ -32,7 +32,7 @@ def busqueda_cuaternaria(lista, izq, der, numero):
 
 print("Busqueda cuaternaria")
 
-print("Ingrese cuantos numeros aleatorios desea obtener")
+print("Ingrese cuantos numeros aleatorios desea obtener: ")
 n = int(input())
 lista = [random.randint(0,1000) for i in range(n)]
 print("Lista: ", lista)
