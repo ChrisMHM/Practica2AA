@@ -48,7 +48,8 @@ print("Lista: ", lista)
 
 #Ordenamiento de la lista
 lista.sort()
-print("Lista Actual: ", lista)
+print()
+print("Lista ordenada: ", lista)
 
 #Comprobacion de lista, si esta vacia o no
 if lista:

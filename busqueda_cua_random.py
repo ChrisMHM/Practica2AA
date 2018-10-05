@@ -1,3 +1,5 @@
+import random
+
 def busqueda_cuaternaria(lista, izq, der, numero):
     #Comprobacion del primer y ultimo indice de la lista
     if der >= izq:
@@ -10,7 +12,7 @@ def busqueda_cuaternaria(lista, izq, der, numero):
         if lista[cuarto1] == numero:
             return cuarto1
         if lista[mitad] == numero:
-            return medio
+            return mitad
         if lista[cuarto2] == numero:
             return cuarto2
 
@@ -29,21 +31,7 @@ def busqueda_cuaternaria(lista, izq, der, numero):
     return -1
 
 print("Busqueda cuaternaria")
-#print("Para dejar de ingresar valores, escribir -1000")
-#valor = input("Valor: ")
 
-#lista = []
-
-#Recibe valores hasta que se ingresa -1000
-#while valor != -1000:
-    #if valor not in lista:
-        #lista.append(valor)
-    #else:
-        #print("Valor repetido")
-    
-    #valor = input("Valor: ")
-
-#print("Lista: ", lista)
 print("Ingrese cuantos numeros aleatorios desea obtener")
 n = int(input())
 lista = [random.randint(0,1000) for i in range(n)]
@@ -51,6 +39,7 @@ print("Lista: ", lista)
 
 #Ordenamiento de la lista
 lista.sort()
+print()
 print("Lista ordenada: ", lista)
 
 #Comprobacion de lista, si esta vacia o no
@@ -61,7 +50,7 @@ if lista:
     print("Izquierda: ",izq)
     print("Derecha: ", der)
 
-    print(izq, der)
+    #print(izq, der)
     #Recibe numero a buscar
     numero = input("Numero a buscar: ")
     #Llamada a la funcion, regresa la posicion del numero que se busca o -1 si no lo encuentra
